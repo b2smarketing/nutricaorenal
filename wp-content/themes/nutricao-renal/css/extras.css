@@ -1,0 +1,14 @@
+figure {
+    margin: 0px;
+}
+
+section .container-fluid a:link {
+    color: #0063be;
+}
+section .container-fluid a:link:hover {
+    text-decoration: underline;
+}
+
+.one {
+    background-position: right;
+}

@@ -1,0 +1,35 @@
+Rins: Funções | os-rins-funcoes.php
+Rins: Anatomia | os-rins-anatomia.php
+Como funcionam os rins? | os-rins-como-funcionam.php
+Programa de apoio ao cliente | amigos-do-rim.php
+O que é função renal? | os-rins-o-que-e-funcao-renal.php
+
+O que é Doença Renal Crônica? | doenca-renal-cronica-definicao.php
+Quais são os sinais e os sintomas da Doença Renal Crônica? | doenca-renal-cronica-sintomas.php
+Causas e fatores de risco da doença renal crônica | doenca-renal-cronica-causas.php
+Diagnóstico | doenca-renal-cronica-diagnostico.php
+Como se prevenir da DRC | doenca-renal-cronica-prevencao.php
+
+Opções de Tratamento na Doença Renal Crônica | tratamentos-visao-geral.php
+Tratamento conservador na doença renal crônica | opcoes-de-tratamento-conservador.php
+Hemodiálise | opcoes-de-tratamento-hemodialise.php
+Diálise Peritoneal | opcoes-de-tratamento-dialise-peritoneal.php
+Transplante renal | opcoes-de-tratamento-transplante-renal.php
+
+Manejo nutricional na doença renal crônica de acordo com os estágios | manejo-nutricional-informacoes-gerais.php
+Nutrição e pré-diálise | nutricao-na-pre-dialise.php
+Nutrição na hemodiálise | nutricao-na-hemodialise.php
+Nutrição na diálise peritoneal | nutricao-na-dialise-peritoneal.php
+Nutrientes | nutrientes.php
+Monitoramento do estado nutricional em pacientes com doença renal crônica | monitoramento.php
+
+Calcule o Seu Índice de Massa Corporal (IMC) | calculadora-imc.php
+Calculadora da TFG: estimando a função renal | calculadora-funcao-renal.php
+Calculadora de Nutrientes | calculadora-nutrientes.php
+
+Sites úteis | site.php
+Juntos pelo Rim - Programa de Apoio ao Paciente Renal | amigos-do-rim.php
+
+Unidades da Fresenius Kabi | https://www.fresenius-kabi.com/br/a-empresa
+Glossário | glossario.php
+Entre em Contato Conosco | https://www.fresenius-kabi.com/br/fale-conosco
