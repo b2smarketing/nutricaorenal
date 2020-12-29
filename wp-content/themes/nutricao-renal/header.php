@@ -46,15 +46,6 @@
 					</picture>
 				</a>
 			</li>
-			<?php /*		
-			<li class="baby-item">
-				<a href="/programa-de-apoio-ao-paciente">
-					<picture>
-						<source media="(max-width: 780px)" srcset="<?php echo get_template_directory_uri();?>/img/banners/banner-juntos-pelo-rim.png">
-						<img border="0" src="<?php echo get_template_directory_uri();?>/img/banners/banner-juntos-pelo-rim.png"/>
-					</picture>
-				</a>
-			</li> */?>	
 			<li class="baby-item">
 				<picture>
 					<source media="(max-width: 780px)" srcset="<?php echo get_template_directory_uri();?>/img/banners/mobile/nutricao-pre-dialise.png">
