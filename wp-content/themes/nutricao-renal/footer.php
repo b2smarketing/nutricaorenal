@@ -43,6 +43,6 @@ try {
 	};
 }
 catch(e) {
-	console.log("Erro ao tentar lidar com id = moar: ", e);
+	//console.log("Erro ao tentar lidar com id = moar: ", e);
 }
 </script>

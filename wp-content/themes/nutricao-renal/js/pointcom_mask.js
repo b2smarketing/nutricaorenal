@@ -64,9 +64,11 @@ jQuery(document).ready(function($){
     $('pre').each(function(i, e) {hljs.highlightBlock(e)});
 });
 
-document.getElementById('cep').onblur = function (){
+if(document.getElementById('cep')){
+document.getElementById('cep').onblur = function (){  
   var valor = document.getElementById('cep').value;
   pesquisacep(valor);
+}
 }
 
 

@@ -37,6 +37,7 @@
 		<div class="pagination baby-pagination"></div>
 		<div class="pagination baby-controls"></div>
 		<ol class="baby" id="baby">
+			<?php /*
 			<li class="baby-item">
 				<a href="/programa-de-apoio-ao-paciente">
 					<picture>
@@ -44,8 +45,7 @@
 						<img border="0" src="<?php echo get_template_directory_uri();?>/img/banners/banner_juntos_pelo_rim.png"/>
 					</picture>
 				</a>
-			</li>
-			<?php /*
+			</li>			
 			<li class="baby-item">
 				<a href="/programa-de-apoio-ao-paciente">
 					<picture>
