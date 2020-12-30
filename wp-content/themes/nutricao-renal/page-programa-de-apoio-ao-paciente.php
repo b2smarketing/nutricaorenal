@@ -23,7 +23,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>Cadastro</h1>
+					<h1>Cadastro</h1>					
 					<?php
 					//echo do_shortcode('[contact-form-7 id="1377" title="Formulário de contato 1"]');
 					echo do_shortcode('[wpforms id="1388"]');
@@ -36,6 +36,13 @@
 </section>
 <script type="text/javascript">
 $(function(){
+	var codigo = $(".codigo input");
+	codigo.attr("type", "hidden");
+	var pref = "KTLFD";
+	$.get("/wp-content/themes/nutricao-renal/codigo/contador.txt", function(resultado){
+     codigo.val(pref+resultado);
+	 console.log(pref+resultado);
+	})
 
 	// Atributos adicionais para Nomes
 	var nome = $(".nome-completo .wpforms-field-name-first");
