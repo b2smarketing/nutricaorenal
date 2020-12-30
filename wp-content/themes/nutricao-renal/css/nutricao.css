@@ -1,0 +1,21 @@
+@media(min-width:650px){
+.campospequenos-esquerda{ 
+    display: block; 
+    position: relative !important;
+    width: 48.2% !important;    
+    float: left !important;
+}
+.campospequenos-direita{ 
+    display: block; 
+    position: absolute !important;
+    width: 48.2% !important;  
+    right: 0;  
+}
+}
+.wpforms-field-description{
+    margin-top: -10px !important;
+}
+.div-presc,.btncadastro{
+    margin-top: 40px !important;
+}
+
