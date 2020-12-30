@@ -5,19 +5,15 @@
     <title>Nutrição Renal</title>
     <meta name="keywords" content="dieta, dieta renal cronica, dieta, frenesius kabi, kabi, nutrição, nutricao, doença, doencas, renal, rin, casa, rim, renal, nutricao">
 	<meta name="description" content="O conteúdo deste site traz informações úteis relacionadas a nutrição ideal enquanto paciente renal, bem como informações básicas sobre a doença renal e o rim.">
-	
 	<meta name="viewport"  content="width=device-width, initial-scale=1.0">
-	
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/img/favicon.png" type="image/png" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Nutrição Renal" />
     <meta property="og:description" content="O conteúdo deste site traz informações úteis relacionadas a nutrição ideal enquanto paciente renal, bem como informações básicas sobre a doença renal e o rim." />
     <meta http-equiv="Cache-Control" content="public" />
-
 	<?php wp_head(); ?>
-
+	<link rel="stylesheet" href="<?php echo SITEPATH; ?>css/nutricao.css">
     <link rel="canonical" href="https://nutricaorenal.com.br<?php echo $_SERVER['REQUEST_URI']; ?>" />
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82077519-21"></script>
     <script>
