@@ -25,8 +25,8 @@
 				<div class="col-lg-12">
 					<h1>Cadastro</h1>
 					<?php
-					//echo do_shortcode('[contact-form-7 id="1377" title="Formulário de contato 1"]');
-					echo do_shortcode('[wpforms id="1388"]');
+					echo do_shortcode('[contact-form-7 id="1377" title="Formulário de contato 1"]');
+					//echo do_shortcode('[wpforms id="1388"]');
 					?>
 				</div>
 			</div>
