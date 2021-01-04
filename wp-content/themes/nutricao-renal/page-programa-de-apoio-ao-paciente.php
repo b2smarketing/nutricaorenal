@@ -22,8 +22,7 @@
 	<div class="juntos-pelo-rim">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-12">
-					<h1>Cadastro</h1>					
+				<div class="col-lg-12">				
 					<a class="cadastro-pap" href="/programa-de-apoio-ao-paciente-novo-cadastro">Novo Cadastro</a>
 					<a class="cadastro-pap" href="/programa-de-apoio-ao-paciente-login">Já sou Cadastrado</a>
 				</div>
