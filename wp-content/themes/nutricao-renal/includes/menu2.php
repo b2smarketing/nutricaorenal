@@ -16,7 +16,7 @@
 
 					<?php global $current_user; wp_get_current_user(); ?>
 
-					<?php
+					<?php /*
                         if ( ! is_user_logged_in() ) { // Display WordPress login form:?>
 						   
 						   <a href="<?php echo esc_url( home_url( '/'));?>login" style="display: none;">Acessar</a>							
@@ -29,7 +29,7 @@
 
 								<a href="<?php echo wp_logout_url(home_url('/login')); ?>"  style="display: none;">sair</a>
 						<?php }
-                    ?>
+                    */ ?>
 
 				<form action="pesquisa.php">
 					<input type="search" name="s" class="esconder search" placeholder="Pesquisar...">

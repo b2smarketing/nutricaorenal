@@ -40,3 +40,63 @@
     display: none !important;
 }*/
 
+.cadastro-pap{
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    border: 2px solid #0063be;
+    color: #0063be;
+    float: left;
+    margin-right: 20px;
+}
+.cadastro-pap:hover{
+    background-color:  #0063be;
+    color: #fff !important;   
+}
+
+.dados-form .wrapper {
+    width: 100%;
+    clear: both;
+    display: block;
+}
+  
+.dados-form .header-row {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+  
+.dados-form span.details, .dados-form span.column-label {
+    display: inline-block;
+    float: left;
+    width: 33%;
+    margin-right: 2px;
+    text-align: center;
+    margin: 5px 0;
+}
+  
+.dados-form .entries {
+    display: block;
+    clear: both;
+    width: 100%;
+}
+  
+.dados-form .header-row span.column-label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+ 
+.dados-form .entry-details {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    display: block;
+    float: left;
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
