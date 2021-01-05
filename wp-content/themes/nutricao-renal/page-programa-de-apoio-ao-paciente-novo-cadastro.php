@@ -32,7 +32,26 @@
 	</div>
 </section>
 <script type="text/javascript">
-$(function(){
+$(function(){	
+
+	$("#wpforms-1388-field_33_1").click(function(){
+		if($(this).is(':checked')){
+			$(".cuidador").slideDown(50);
+		}else{
+			$(".cuidador").slideUp(50);
+		}
+	})	
+
+	$(".btncadastro").css({'display':'none'});
+
+	$("#wpforms-1388-field_34_1").click(function(){
+		if($(this).is(':checked')){
+			$(".btncadastro").slideDown(50);
+		}else{
+			$(".btncadastro").slideUp(50);
+		}
+	})
+
 	var codigo = $(".codigo input");
 	codigo.attr("type", "hidden");
 	var pref = "KTLFD";
@@ -75,6 +94,13 @@ $(function(){
 	sobrenome.attr("maxlength", "30");
 	*/
 
+	// campo-data
+	// Atributos adicionais para Data-Nascimento
+	var campodata = $(".campo-data input");
+	campodata.attr("onKeyPress", "MascaraData(this)");
+	campodata.attr("onKeyUp", "$('.campo-data .wpforms-field-description').html('')");
+	campodata.attr("onBlur", "ValidaData(this)");
+	campodata.attr("maxlength", "10");
 
 	// Atributos adicionais para CPF
 	var campocpf = $(".campo-cpf input");
@@ -98,6 +124,10 @@ $(function(){
 	campocep.attr("onKeyUp", "$('.campocep .wpforms-field-description').html('')");
 	campocep.attr("onBlur", "ValidaCep(this)");
 	campocep.attr("maxlength", "10");
+
+	// Atributos adicionais para Aceito
+	var aceito = $(".aceito label");
+	aceito.append("<a href='/regulamento'> Política do Programa</a>")
 
 })
 </script>

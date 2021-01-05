@@ -176,7 +176,9 @@ function ValidaCep(vcep) {
 //valida data
 function ValidaData(data) {
         var exp = /\d{2}\/\d{2}\/\d{4}/;
-        if (!exp.test(data.value)) { alert('Data Invalida!'); form1.data.value = ''; form1.rg.focus(); return false; }
+        if (!exp.test(data.value)) { 
+                $(".campo-data .wpforms-field-description").html('Data inválida').css({ 'color': '#900' }); $(".campo-data input").val(''); $(".campo-data input").focus();
+        }
 }
 
 //valida telefone Celular

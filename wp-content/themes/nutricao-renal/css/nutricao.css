@@ -36,9 +36,6 @@
 .div-presc,.btncadastro{
     margin-top: 40px !important;
 }
-/*.telefones .wpforms-field-name-first{
-    display: none !important;
-}*/
 
 .cadastro-pap{
     display: block;
@@ -55,6 +52,30 @@
 .cadastro-pap:hover{
     background-color:  #0063be;
     color: #fff !important;   
+}
+
+.possui-cuidador{
+    display: block;
+    position: relative !important;
+    width: 300px !important;
+    top: -30px !important;
+}
+
+#wpforms-1388-field_33_1{    
+    margin-left: 0px !important;
+}
+
+.cuidador{
+    display: none;
+}
+
+.aceito{
+    display: block;
+    position: relative !important;
+    width: 300px !important;
+}
+#wpforms-1388-field_34_1{
+    margin-left: 0px !important;
 }
 
 .dados-form .wrapper {
