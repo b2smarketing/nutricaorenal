@@ -77,12 +77,16 @@
 						<li><a href="<?php echo esc_url( home_url( '/'));?>doenca-renal-cronica-causas">Causas</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/'));?>doenca-renal-cronica-diagnostico">Diagnóstico</a></li>											
 						<li><a href="<?php echo esc_url( home_url( '/'));?>doenca-renal-cronica-prevencao">Prevenção</a></li>		
-						<li><a href="<?php echo esc_url( home_url( '/'));?>keto-connect">Keto Connect</a></li>				
-								
 					</ul>
 				</li>		
 				
-				<li><a href="<?php echo esc_url( home_url( '/'));?>ead-cetodieta">EAD</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/'));?>ead-cetodieta">APOIO</a>
+					<ul class="nav-dropdown">
+						<li><a href="<?php echo esc_url( home_url( '/'));?>keto-connect">Keto Connect</a></li>				
+					</ul>
+				</li>
+				
+				
 				<li><a href="#!">Opções de tratamento</a>
 					<ul class="nav-dropdown">
 						<li><a href="<?php echo esc_url( home_url( '/'));?>tratamentos-visao-geral">Opções de tratamento</a></li>
@@ -92,6 +96,7 @@
 						<li><a href="<?php echo esc_url( home_url( '/'));?>opcoes-de-tratamento-transplante-renal">Transplante</a></li>						
 					</ul>
 				</li>
+
 				<li><a href="#!">Manejo Nutricional</a>
 					<ul class="nav-dropdown">
 						<li><a href="manejo-nutricional-informacoes-gerais">Informação geral</a></li>
