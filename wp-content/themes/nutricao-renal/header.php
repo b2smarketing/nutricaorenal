@@ -35,15 +35,21 @@
 		<div class="pagination baby-pagination"></div>
 		<div class="pagination baby-controls"></div>
 		<ol class="baby" id="baby">
-			
+
 			<li class="baby-item">
-				<a href="/programa-de-apoio-ao-paciente">
-					<picture>
-						<source media="(max-width: 780px)" srcset="<?php echo get_template_directory_uri();?>/img/banners/mobile/banner_juntos_pelo_rim.png">
-						<img border="0" src="<?php echo get_template_directory_uri();?>/img/banners/banner_juntos_pelo_rim.png"/>
-					</picture>
-				</a>
+				<picture>
+					<source media="(max-width: 780px)" srcset="<?php echo get_template_directory_uri();?>/img/banners/mobile/banner_juntos_pelo_rim.png">
+					<img border="0" src="<?php echo get_template_directory_uri();?>/img/banners/banner_juntos_pelo_rim.png" class="opacity-mobile"/>
+				</picture>
+				<div class="container-fluid textoSlide">
+					<div class="col-lg-4">
+						<h1 class="wow fadeIn"><br>Novidade</h1>
+                        <p>O Programa Juntos pelo Rim tem agora um programa de descontos!</p>
+                        <a class="wow fadeIn" href="/programa-de-apoio-ao-paciente">Saiba Mais ></a>
+					</div>
+				</div>					
 			</li>
+
 			<li class="baby-item">
 				<picture>
 					<source media="(max-width: 780px)" srcset="<?php echo get_template_directory_uri();?>/img/banners/mobile/nutricao-pre-dialise.png">
@@ -70,6 +76,7 @@
 					</div>
 				</div>					
 			</li>
+
 			<li class="baby-item">
 				<picture>
 					<source media="(max-width: 780px)" srcset="<?php echo get_template_directory_uri();?>/img/banners/mobile/suporte-nutricional.png">
