@@ -127,7 +127,7 @@ $(function(){
 
 	// Atributos adicionais para Aceito
 	var aceito = $(".aceito label");
-	aceito.append("<a href='/regulamento'> Política do Programa</a>")
+	aceito.append("<a target='_blank' href='/regulamento'> Política do Programa</a>")
 
 })
 </script>
