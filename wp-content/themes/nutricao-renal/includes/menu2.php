@@ -78,14 +78,7 @@
 						<li><a href="<?php echo esc_url( home_url( '/'));?>doenca-renal-cronica-diagnostico">Diagnóstico</a></li>											
 						<li><a href="<?php echo esc_url( home_url( '/'));?>doenca-renal-cronica-prevencao">Prevenção</a></li>		
 					</ul>
-				</li>		
-				
-				<li><a href="<?php echo esc_url( home_url( '/'));?>ead-cetodieta">EAD</a>
-					<ul class="nav-dropdown">
-						<li><a href="<?php echo esc_url( home_url( '/'));?>keto-connect">Keto Connect</a></li>				
-					</ul>
-				</li>
-				
+				</li>			
 				
 				<li><a href="#!">Opções de tratamento</a>
 					<ul class="nav-dropdown">
@@ -109,6 +102,13 @@
 					</ul>
 				</li>
 				<li><a href="<?php echo esc_url( home_url( '/'));?>programa-de-apoio-ao-paciente">Juntos Pelo Rim</a></li>
+				
+				<li><a href="<?php echo esc_url( home_url( '/'));?>ead-cetodieta">EAD</a>
+					<ul class="nav-dropdown">
+						<li><a href="<?php echo esc_url( home_url( '/'));?>keto-connect">Keto Connect</a></li>				
+					</ul>
+				</li>
+				
 				<li><a href="#!">Apoio</a>
 					<ul class="nav-dropdown" style="right: 0">
 						<li><a href="http://www.sbn.org.br" target="_blank">Profissionais de saúde, como encontrar?</a></li>	
