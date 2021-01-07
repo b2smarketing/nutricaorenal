@@ -80,7 +80,7 @@
 					</ul>
 				</li>		
 				
-				<li><a href="<?php echo esc_url( home_url( '/'));?>ead-cetodieta">APOIO</a>
+				<li><a href="<?php echo esc_url( home_url( '/'));?>ead-cetodieta">EAD</a>
 					<ul class="nav-dropdown">
 						<li><a href="<?php echo esc_url( home_url( '/'));?>keto-connect">Keto Connect</a></li>				
 					</ul>
