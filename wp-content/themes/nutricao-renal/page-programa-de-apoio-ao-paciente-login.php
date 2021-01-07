@@ -6,7 +6,11 @@
 				<div class="col-lg-12">
 					<h1>Login</h1>
 					<?php
+					if(!is_user_logged_in()){
 					echo do_shortcode('[wpforms id="1399"]');
+					}else{
+						echo "<script>window.location.href='/programa-de-apoio-ao-paciente-gerar-cupom';</script>";
+					}
 					?>				
 				</div>
 			</div>
