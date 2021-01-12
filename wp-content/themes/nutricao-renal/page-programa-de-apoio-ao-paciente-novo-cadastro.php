@@ -35,13 +35,15 @@
 $(function(){
 
 	function dataAtualFormatada(){
-    var data = new Date(),
-        dia  = data.getDate().toString(),
-        diaF = (dia.length == 1) ? '0'+dia : dia,
-        mes  = (data.getMonth()+1).toString(), //+1 pois no getMonth Janeiro começa com zero.
-        mesF = (mes.length == 1) ? '0'+mes : mes,
-        anoF = data.getFullYear();
-    return diaF+"/"+mesF+"/"+anoF;
+    	var data = new Date();
+        dia  = data.getDate().toString();
+		diaF = (dia.length == 1) ? '0'+dia : dia;
+		mesC = data.getMonth()+2; // próx mês + 1 (js começa do zero)
+        mes  = ((mesC == 13)?mesC-12:mesC).toString();
+        mesF = (mes.length == 1) ? '0'+mes : mes;
+        anoF = (mesC == 13)?data.getFullYear()+1:data.getFullYear();
+	
+		return diaF+"/"+mesF+"/"+anoF;
 	}
 	
 	console.log(dataAtualFormatada());
