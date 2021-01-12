@@ -32,7 +32,17 @@
 	</div>
 </section>
 <script type="text/javascript">
-$(function(){	
+$(function(){
+
+	function dataAtualFormatada(){
+    var data = new Date(),
+        dia  = data.getDate().toString(),
+        diaF = (dia.length == 1) ? '0'+dia : dia,
+        mes  = (data.getMonth()+1).toString(), //+1 pois no getMonth Janeiro começa com zero.
+        mesF = (mes.length == 1) ? '0'+mes : mes,
+        anoF = data.getFullYear();
+    return diaF+"/"+mesF+"/"+anoF;
+	}	
 
 	$("#wpforms-1388-field_33_1").click(function(){
 		if($(this).is(':checked')){
@@ -53,12 +63,15 @@ $(function(){
 	})
 
 	var codigo = $(".codigo input");
+	var codigodata = $(".codigo-data input");
 	codigo.attr("type", "hidden");
+	codigodata.attr("type", "hidden");
 	var pref = "KTLFD";
 	$.get("/wp-content/themes/nutricao-renal/codigo/contador.txt", function(resultado){
      codigo.val(pref+resultado);
 	 console.log(pref+resultado);
 	})
+	codigodata.val(dataAtualFormatada());
 
 	// Atributos adicionais para Nomes
 	var nome = $(".nome-completo .wpforms-field-name-first");
