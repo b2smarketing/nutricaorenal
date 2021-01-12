@@ -8,7 +8,8 @@
 					<?php
 					if(is_user_logged_in()){
 					$user = wp_get_current_user()->user_login;
-					echo do_shortcode("[wpforms_entries_table id='1388' user='".$user."']");
+					echo do_shortcode("[wpforms_entries_table id='1388' fields='1,3,10,31,37' user='".$user."']");
+					echo "<br><button class='btngeracod' onclick='geracod()'>Gerar Novo Cupom</button>";
 					}else{
 						echo "<h3>Precisa estar logado no sistema !</h3>";
 					}

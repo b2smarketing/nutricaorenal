@@ -76,7 +76,7 @@
 .telefones{
     display: block;
     position: relative !important;   
-    top: 50px !important;
+    top: 0px !important;
 }
 
 #wpforms-1388-field_33_1{    
@@ -88,8 +88,24 @@
     position: relative !important;
     width: 300px !important;
 }
+.arquivo{
+    display: block;
+    position: relative !important;
+    top:20px !important;
+}
 #wpforms-1388-field_34_1{
     margin-left: 0px !important;
+}
+
+.listacupom{
+    list-style: none;
+}
+
+.btngeracod{
+    padding: 5px;
+    text-align: center;
+    float: left;
+    border-radius: 3px;
 }
 
 .dados-form .wrapper {

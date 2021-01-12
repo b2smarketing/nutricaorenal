@@ -1,4 +1,11 @@
-// JavaScript Validador , E.M. - 30/12/2020
+// JavaScript Validador , E.M. - 12/01/2021
+
+function geracod(){
+        var pref = "KTLFD";
+	$.get("/wp-content/themes/nutricao-renal/codigo/contador.txt", function(resultado){     
+	 console.log(pref+resultado);
+	})
+}
 
 // ========================== MASCARAS ======================
 

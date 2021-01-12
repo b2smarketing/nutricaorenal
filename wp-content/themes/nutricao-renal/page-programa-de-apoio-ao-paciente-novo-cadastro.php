@@ -42,7 +42,9 @@ $(function(){
         mesF = (mes.length == 1) ? '0'+mes : mes,
         anoF = data.getFullYear();
     return diaF+"/"+mesF+"/"+anoF;
-	}	
+	}
+	
+	console.log(dataAtualFormatada());
 
 	$("#wpforms-1388-field_33_1").click(function(){
 		if($(this).is(':checked')){
