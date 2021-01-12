@@ -101,7 +101,7 @@
     list-style: none;
 }
 
-.btngeracod{
+.btngeracod, .voltar{
     padding: 5px;
     text-align: center;
     float: left;
