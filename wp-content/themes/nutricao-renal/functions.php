@@ -85,16 +85,8 @@ function wpf_entries_table($atts)
 
     $entries_args = [
         'form_id' => absint($atts['id']),
-    ];
+    ];  
 
-    // Narrow entries by user if user_id shortcode attribute was used.
-    if (!empty($atts['user'])) {
-        if ($atts['user'] === 'current' && is_user_logged_in()) {
-            $entries_args['user_id'] = get_current_user_id();
-        } else {
-            $entries_args['user_id'] = absint($atts['user']);
-        }
-    }
 
     // Number of entries to show. If empty, defaults to 30.
     if (!empty($atts['number'])) {
@@ -104,6 +96,9 @@ function wpf_entries_table($atts)
     // Get all entries for the form, according to arguments defined.
     // There are many options available to query entries. To see more, check out
     // the get_entries() function inside class-entry.php (https://a.cl.ly/bLuGnkGx).
+    $user = wp_get_current_user()->user_login;
+    $entries_args['user_id'] = $user;
+
     $entries = wpforms()->entry->get_entries($entries_args);
 
     if (empty($entries)) {

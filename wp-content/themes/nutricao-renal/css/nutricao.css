@@ -101,11 +101,29 @@
     list-style: none;
 }
 
-.btngeracod, .voltar{
+.btngeracod{
     padding: 5px;
     text-align: center;
     float: left;
     border-radius: 3px;
+}
+.divvoltar{
+    display:block;
+    position:relative;
+    width:100%;
+    height: 90px;
+    top:10px;    
+}
+.voltar{
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+.lista-regulamento ul{
+    top:10px;
+    left: -40px;
+    list-style: none;
 }
 
 .dados-form .wrapper {
