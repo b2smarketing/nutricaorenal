@@ -124,7 +124,7 @@ function wpf_entries_table($atts)
             echo "<ul class='listacupom'>";
             foreach ($entry_fields as $entry_field) {
                 if (absint($entry_field['id']) === absint($form_field['id'])) {
-                    echo "<li><strong>".$campo[$x]."</strong>: ".apply_filters('wpforms_html_field_value', wp_strip_all_tags($entry_field['value']), $entry_field, $form_data, 'entry-frontend-table')."</li>";
+                    echo "<li><strong>".$campo[$x]."</strong>: <span class='item".$x."'>".apply_filters('wpforms_html_field_value', wp_strip_all_tags($entry_field['value']), $entry_field, $form_data, 'entry-frontend-table')."</span></li>";
                     break;
                 }
             }

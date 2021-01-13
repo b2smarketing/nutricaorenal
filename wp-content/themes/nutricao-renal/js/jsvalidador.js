@@ -1,10 +1,37 @@
 // JavaScript Validador , E.M. - 12/01/2021
 
-function geracod(){
+function geracod() {
         var pref = "KTLFD";
-	$.get("/wp-content/themes/nutricao-renal/codigo/contador.txt", function(resultado){     
-	 console.log(pref+resultado);
-	})
+        var codigo = "";        
+        var velho = $('.listacupom .item3').text();
+        console.log(velho);
+        $.ajax({
+                url: "/wp-content/themes/nutricao-renal/codigo/contador.txt",
+                type: 'get',
+                async: false,
+                success: function (resultado) {
+                        codigo = pref + resultado;
+                }
+        });
+
+        console.log(codigo);
+        function dataAtualFormatada() {
+                var data = new Date();
+                dia = data.getDate().toString();
+                diaF = (dia.length == 1) ? '0' + dia : dia;
+                mesC = data.getMonth() + 2; // próx mês + 1 (js começa do zero)
+                mes = ((mesC == 13) ? mesC - 12 : mesC).toString();
+                mesF = (mes.length == 1) ? '0' + mes : mes;
+                anoF = (mesC == 13) ? data.getFullYear() + 1 : data.getFullYear();
+
+                return diaF + "/" + mesF + "/" + anoF;
+        }
+        var vencimento = dataAtualFormatada()
+        console.log(vencimento);
+
+        $.post("/codigo", { velho:velho, codigo: codigo, vencimento: vencimento }, function (data) {
+                console.log(data);
+        });
 }
 
 // ========================== MASCARAS ======================
@@ -111,7 +138,7 @@ function ValidaMail(mail) {
 // Pesquisa CEP
 
 function limpaformuláriocep() {
-        //Limpa valores do formulário de cep.        
+        //Limpa valores do formulário de cep.
         $(".estado select").val("Estado");
         $(".logradouro .wpforms-field-name-first").val("");
         $(".bairro-cidade .wpforms-field-name-first").val("");
@@ -120,7 +147,7 @@ function limpaformuláriocep() {
 
 function meucallback(conteudo) {
         if (!("erro" in conteudo)) {
-                //Atualiza os campos com os valores.               
+                //Atualiza os campos com os valores.       
                 $(".estado select").val(conteudo.uf);
                 $(".logradouro .wpforms-field-name-first").val(conteudo.logradouro);
                 $(".bairro-cidade .wpforms-field-name-first").val(conteudo.bairro);
@@ -183,7 +210,7 @@ function ValidaCep(vcep) {
 //valida data
 function ValidaData(data) {
         var exp = /\d{2}\/\d{2}\/\d{4}/;
-        if (!exp.test(data.value)) { 
+        if (!exp.test(data.value)) {
                 $(".campo-data .wpforms-field-description").html('Data inválida').css({ 'color': '#900' }); $(".campo-data input").val(''); $(".campo-data input").focus();
         }
 }
