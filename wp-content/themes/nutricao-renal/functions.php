@@ -4,7 +4,7 @@ include(TEMPLATEPATH . '/functions/theme.php');
 define('SITEPATH', '/wp-content/themes/nutricao-renal/');
 
 /**
- * Custom shortcode to display WPForms form entries in non-table view.
+ * Custom shortcode to display WPForms form entries in table view.
  *
  * Basic usage: [wpforms_entries_table id="FORMID"].
  * 
@@ -29,9 +29,7 @@ function wpf_entries_table($atts)
     $atts = shortcode_atts(
         [
             'id'     => '',
-            'user'   => '',
-            'fields' => '',
-            'number' => '',
+            'fields' => ''
         ],
         $atts
     );
@@ -85,7 +83,26 @@ function wpf_entries_table($atts)
 
     $entries_args = [
         'form_id' => absint($atts['id']),
-    ];  
+    ];
+
+    include $_SERVER['DOCUMENT_ROOT'] . "/wp-config.php";
+
+    $usuario = wp_get_current_user()->user_login;
+
+    $conexao = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+    $sql = "select user_id from wp_wpforms_entries where fields like '%$usuario%'";
+
+    $consulta = $conexao->query($sql);
+
+    $resultado = array();
+    foreach ($consulta as $row) {
+        $resultado[] = $row;
+    }
+    $usuario_id = $resultado[0]['user_id'];
+
+    // Narrow entries by user if user_id shortcode attribute was used.  
+    $entries_args['user_id'] = $usuario_id;
 
 
     // Number of entries to show. If empty, defaults to 30.
@@ -96,9 +113,6 @@ function wpf_entries_table($atts)
     // Get all entries for the form, according to arguments defined.
     // There are many options available to query entries. To see more, check out
     // the get_entries() function inside class-entry.php (https://a.cl.ly/bLuGnkGx).
-    $user = wp_get_current_user()->user_login;
-    $entries_args['user_id'] = $user;
-
     $entries = wpforms()->entry->get_entries($entries_args);
 
     if (empty($entries)) {
@@ -107,7 +121,7 @@ function wpf_entries_table($atts)
 
     ob_start();
 
-    $campo = ['Nome',"E-Mail","CPF","Cupom","Data"];
+    $campo = ['Nome', "E-Mail", "CPF", "Cupom", "Data"];
     $x = 0;
     // Now, loop through all the form entries.
     foreach ($entries as $entry) {
@@ -119,7 +133,7 @@ function wpf_entries_table($atts)
             echo "<ul class='listacupom'>";
             foreach ($entry_fields as $entry_field) {
                 if (absint($entry_field['id']) === absint($form_field['id'])) {
-                    echo "<li><strong>".$campo[$x]."</strong>: <span class='item".$x."'>".apply_filters('wpforms_html_field_value', wp_strip_all_tags($entry_field['value']), $entry_field, $form_data, 'entry-frontend-table')."</span></li>";
+                    echo "<li><strong>" . $campo[$x] . "</strong>: <span class='item" . $x . "'>" . apply_filters('wpforms_html_field_value', wp_strip_all_tags($entry_field['value']), $entry_field, $form_data, 'entry-frontend-table') . "</span></li>";
                     break;
                 }
             }
