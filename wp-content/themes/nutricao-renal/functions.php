@@ -91,7 +91,7 @@ function wpf_entries_table($atts)
 
     $conexao = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
-    $sql = "select user_id from wp_wpforms_entries where fields like '%$usuario%'";
+    $sql = "select entry_id from wp_wpforms_entries where fields like '%$usuario%'";
 
     $consulta = $conexao->query($sql);
 
@@ -99,10 +99,10 @@ function wpf_entries_table($atts)
     foreach ($consulta as $row) {
         $resultado[] = $row;
     }
-    $usuario_id = $resultado[0]['user_id'];
+    $usuario_id = $resultado[0]['entry_id'];
 
     // Narrow entries by user if user_id shortcode attribute was used.  
-    $entries_args['user_id'] = $usuario_id;
+    $entries_args['entry_id'] = $usuario_id;
 
 
     // Number of entries to show. If empty, defaults to 30.
