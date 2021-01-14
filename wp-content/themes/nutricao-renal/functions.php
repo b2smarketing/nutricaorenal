@@ -163,7 +163,6 @@ function wpf_entries_table($atts)
         echo "</ul>";
     }
 
-
     $output = ob_get_clean();
 
     return $output;

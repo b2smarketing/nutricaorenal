@@ -1,5 +1,4 @@
 <?php
-
 // DATA
 $ano = date('Y');
 $mes = date('m');
@@ -36,16 +35,4 @@ if($resultado != null){
         echo "ERRO ao inserir";
     }
 }
-
-/*$sql = "select entry_id from wp_wpforms_entries where fields like '%$velho%'";
-
-$consulta = $conexao->query($sql);
-
-$resultado = array();
-foreach($consulta as $row){
- $resultado[] = $row;
-}
-echo $resultado[0]['entry_id'];
-*/
-
 
