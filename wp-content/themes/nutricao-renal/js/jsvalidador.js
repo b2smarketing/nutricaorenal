@@ -1,38 +1,25 @@
 // JavaScript Validador , E.M. - 12/01/2021
 
-function geracod() {
-        var pref = "KTLFD";
-        var codigo = "";        
-        var velho = $('.listacupom .item3').text();
-        console.log(velho);
-        $.ajax({
-                url: "/wp-content/themes/nutricao-renal/codigo/contador.txt",
-                type: 'get',
-                async: false,
-                success: function (resultado) {
-                        codigo = pref + resultado;
-                }
-        });
-
-        console.log(codigo);
-        function dataAtualFormatada() {
-                var data = new Date();
-                dia = data.getDate().toString();
-                diaF = (dia.length == 1) ? '0' + dia : dia;
-                mesC = data.getMonth() + 2; // próx mês + 1 (js começa do zero)
-                mes = ((mesC == 13) ? mesC - 12 : mesC).toString();
-                mesF = (mes.length == 1) ? '0' + mes : mes;
-                anoF = (mesC == 13) ? data.getFullYear() + 1 : data.getFullYear();
-
-                return diaF + "/" + mesF + "/" + anoF;
+$(function () { 
+        if ($('#confirmado').length) {
+                var usuario = $('#confirmado').html();              
+                $.post("/codigo",{usuario,usuario}, function (data) {
+                        console.log(data);
+                });
+        } else {
+                console.log("digitar form");
         }
-        var vencimento = dataAtualFormatada()
-        console.log(vencimento);
+})
 
-        $.post("/codigo", { velho:velho, codigo: codigo, vencimento: vencimento }, function (data) {
-                console.log(data);
+function geranovocod(){
+        var codigo = $("#codigo").html();
+        var validade = $("#validade").html();
+        var usuario = $("#item1").html();
+        $.post("/codigonovo",{codigo:codigo,validade:validade,usuario:usuario}, function (data) {
+                $('.resposta').html(data);
         });
 }
+
 
 // ========================== MASCARAS ======================
 

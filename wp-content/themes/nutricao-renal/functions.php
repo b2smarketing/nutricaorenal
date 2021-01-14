@@ -119,27 +119,48 @@ function wpf_entries_table($atts)
         return '<p>No entries found.</p>';
     }
 
+    function inverteData($data){
+        if(count(explode("/",$data)) > 1){
+            return implode("-",array_reverse(explode("/",$data)));
+        }elseif(count(explode("-",$data)) > 1){
+            return implode("/",array_reverse(explode("-",$data)));
+        }
+    }
+
     ob_start();
 
-    $campo = ['Nome', "E-Mail", "CPF", "Cupom", "Data"];
+    $campo = ['Nome','Usuario', "E-Mail", "CPF"];
     $x = 0;
     // Now, loop through all the form entries.
     foreach ($entries as $entry) {
 
         // Entry field values are in JSON, so we need to decode.
         $entry_fields = json_decode($entry->fields, true);
-
+        echo "<ul class='listacupom'>";
         foreach ($form_fields as $form_field) {
-            echo "<ul class='listacupom'>";
+
             foreach ($entry_fields as $entry_field) {
                 if (absint($entry_field['id']) === absint($form_field['id'])) {
-                    echo "<li><strong>" . $campo[$x] . "</strong>: <span class='item" . $x . "'>" . apply_filters('wpforms_html_field_value', wp_strip_all_tags($entry_field['value']), $entry_field, $form_data, 'entry-frontend-table') . "</span></li>";
+                    echo "<li><strong>" . $campo[$x] . "</strong>: <span id='item" . $x . "'>" . apply_filters('wpforms_html_field_value', wp_strip_all_tags($entry_field['value']), $entry_field, $form_data, 'entry-frontend-table') . "</span></li>";
                     break;
                 }
             }
             $x++;
-            echo "</ul>";
         }
+
+        $sql2 = "select codigo,validade from wp_codigos where usuario = '$usuario'";
+
+        $consulta = $conexao->query($sql2);
+
+        $resultado = array();
+        
+        foreach ($consulta as $row) {
+            $resultado[] = $row;
+        }  
+        $ultimo = count($resultado) - 1;      
+        echo "<li><strong>Cupom</strong>: <span id='codigo'>".$resultado[$ultimo]['codigo']."</span></li>";
+        echo "<li><strong>Validade</strong>: <span id='validade'>".inverteData($resultado[$ultimo]['validade'])."</span></li>";
+        echo "</ul>";
     }
 
 

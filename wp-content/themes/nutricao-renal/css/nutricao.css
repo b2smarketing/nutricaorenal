@@ -99,6 +99,7 @@
 
 .listacupom{
     list-style: none;
+    left: -40px;
 }
 
 .btngeracod{
@@ -168,4 +169,15 @@
     float: left;
     margin: 20px 0;
     padding-bottom: 20px;
+}
+.resposta{
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 10px;
+    text-align: left;
+    float: left;
+}
+.erro{
+    color: red;
 }
