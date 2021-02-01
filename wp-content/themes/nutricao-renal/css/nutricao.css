@@ -181,3 +181,20 @@
 .erro{
     color: red;
 }
+
+.quadro, .video{    
+    display: block !important;
+    position: relative !important;
+    text-align: center;    
+    margin: 0 auto !important;
+}
+.quadro{
+    padding-left: 20%;
+}
+.quadro .box80{
+    text-align: center;
+    padding-right: 10%;
+}
+.video{   
+    top: 50px !important;
+}
