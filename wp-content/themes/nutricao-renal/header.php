@@ -39,13 +39,14 @@
 			<li class="baby-item">
 				<picture>
 					<source media="(max-width: 780px)" srcset="<?php echo get_template_directory_uri();?>/img/banners/mobile/banner_juntos_pelo_rim.png">
-					<img border="0" src="<?php echo get_template_directory_uri();?>/img/banners/banner_juntos_pelo_rim.png" class="opacity-mobile"/>
+					<img border="0" src="<?php echo get_template_directory_uri();?>/img/banners/banner_site_2.png" class="opacity-mobile"/>
+					<!-- cor botao #ffe061 -->
 				</picture>
 				<div class="container-fluid textoSlide">
 					<div class="col-lg-4">
-						<h1 class="wow fadeIn"><br>Novidade</h1>
-                        <p>O Programa Juntos pelo Rim tem agora um programa de descontos!</p>
-                        <a class="wow fadeIn" href="/programa-de-apoio-ao-paciente"><h2 class="desconto">Saiba Mais</h2></a>
+						<!--<h1 class="wow fadeIn"><br>Novidade</h1>
+                        <p>O Programa Juntos pelo Rim tem agora um programa de descontos!</p>-->
+                        <a class="wow fadeIn" href="/programa-de-apoio-ao-paciente"><h2 class="desconto">&nbsp;</h2></a>
 					</div>
 				</div>					
 			</li>
