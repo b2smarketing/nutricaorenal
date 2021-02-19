@@ -198,3 +198,13 @@
 .video{   
     top: 50px !important;
 }
+.desconto{
+    display: block;
+    position: relative;
+    width: 150px;
+    background-color: #0063be;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+}

@@ -25,7 +25,7 @@
 
 							<p>Qualquer dúvida nutricional que exceda a característica de esclarecimentos dos conteúdos educativos, como por exemplo atender a solicitações de elaboração de cardápio alimentar, avaliação nutricional, esclarecimentos sobre a patologia do paciente, não serão respondidos por segurança da vida do paciente, havendo obrigação de nossa parte apenas orientá-lo que procure seu médico de confiança para tais esclarecimentos.</p>
 
-							<p>O conhecimento pelo paciente quanto a existência do Programa Juntos pelo Rim pode ocorrer através do(s) profissional(is) de saúde que faz(fazem) o seu acompanhamento clínico ou por sites como <a href="http://www.nutricaorenal.com.br">www.nutricaorenal.com.br</a> ou <a href="http://www.fresenius-kabi.com">www.fresenius-kabi.com</a>, ou sites de busca.</p>
+							<p>O conhecimento pelo paciente quanto a existência do Programa Juntos pelo Rim pode ocorrer através do(s) profissional(is) de saúde que faz(fazem) o seu acompanhamento clínico ou por sites como <a href="http://www.juntospelorim.com.br">www.juntospelorim.com.br</a> ou <a href="http://www.fresenius-kabi.com">www.fresenius-kabi.com</a>, ou sites de busca.</p>
 
 
 							<p>O contato do paciente com o Programa pode correr através do e-mail <a href="mailto:juntospelorim@fresenius-kabi.com">juntospelorim@fresenius-kabi.com</a> ou 0800-707 3855 (opção 5). O horário do atendimento telefônico é das 09:00 às 16:00 horas, de 2ª feira à 6ª feira, exceto feriados.</p>
@@ -33,7 +33,7 @@
 							<p>Para se cadastrar no Programa Juntos pelo Rim é muito simples e sem custos. Para isso é necessário que o paciente comprove estar em tratamento com a Cetodieta por recomendação médica, enviando a prescrição médica. Este quesito se faz necessário pois toda a abordagem educativa do Programa é específica e se aplica somente a pacientes renais adultos que estejam em fase pré-dialítica estágio 4 ou 5 da Doença Renal Crônica (DRC), com Taxa de Filtração Glomerular (TFG) &lt; 25 mL/min fazendo utilização dos comprimidos de análogos + aminoácidos.</p>
 
 
-							<p>O cadastro pode ser feito via telefone com a atendente ou o próprio paciente poderá preencher o formulário disponível através do site <a href="http://www.nutricaorenal.com.br">www.nutricaorenal.com.br</a>. Os dados necessários para o cadastro são pessoais e sobre a prescrição:</p>
+							<p>O cadastro pode ser feito via telefone com a atendente ou o próprio paciente poderá preencher o formulário disponível através do site <a href="http://www.juntospelorim.com.br">www.juntospelorim.com.br</a>. Os dados necessários para o cadastro são pessoais e sobre a prescrição:</p>
 
 
 							<p><strong>Dados do Paciente</strong></p>
@@ -128,7 +128,7 @@
 
 
 
-							<p>O Programa de Desconto do Juntos pelo Rim é exclusivo para o medicamento Ketosteril (aminoácidos + análogos) e somente para a apresentação de 100 comprimidos (BR100327). Basta clicar no botão Cupom de Desconto através do site www.nutricaorenal.com.br e o paciente receberá via SMS (tipo de mensagem enviada ao telefone celular) e e-mail cadastrado a validação para compra de até 4 caixas de Ketosteril numa única compra dentro do mês. Este Cupom deverá ser utilizado no parceiro comercial Farmadelivery, através da compra on line, via site <a href="https://www.farmadelivery.com.br/ketosteril-c-100-comprimidos">https://www.farmadelivery.com.br/ketosteril-c-100-comprimidos</a>. Após aquisição do Cupom no site <a href="http://www.nutricaorenal.com.br">www.nutricaorenal.com.br</a>, o paciente será direcionado automaticamente ao link de compras. Da mesma forma, se o paciente entrar no link da Farmadelivery (<a href="https://www.farmadelivery.com.br/ketosteril-c-100-comprimidos">https://www.farmadelivery.com.br/ketosteril-c-100-comprimidos</a>) há um caminho direto para o Programa Juntos pelo Rim no site <a href="http://www.nutricaorenal.com.br">www.nutricaorenal.com.br</a>, para que o paciente adquira o Cupom de Desconto.</p>
+							<p>O Programa de Desconto do Juntos pelo Rim é exclusivo para o medicamento Ketosteril (aminoácidos + análogos) e somente para a apresentação de 100 comprimidos (BR100327). Basta clicar no botão Cupom de Desconto através do site www.juntospelorim.com.br e o paciente receberá via SMS (tipo de mensagem enviada ao telefone celular) e e-mail cadastrado a validação para compra de até 4 caixas de Ketosteril numa única compra dentro do mês. Este Cupom deverá ser utilizado no parceiro comercial Farmadelivery, através da compra on line, via site <a href="https://www.farmadelivery.com.br/ketosteril-c-100-comprimidos">https://www.farmadelivery.com.br/ketosteril-c-100-comprimidos</a>. Após aquisição do Cupom no site <a href="http://www.juntospelorim.com.br">www.juntospelorim.com.br</a>, o paciente será direcionado automaticamente ao link de compras. Da mesma forma, se o paciente entrar no link da Farmadelivery (<a href="https://www.farmadelivery.com.br/ketosteril-c-100-comprimidos">https://www.farmadelivery.com.br/ketosteril-c-100-comprimidos</a>) há um caminho direto para o Programa Juntos pelo Rim no site <a href="http://www.juntospelorim.com.br">www.juntospelorim.com.br</a>, para que o paciente adquira o Cupom de Desconto.</p>
 
 
 
