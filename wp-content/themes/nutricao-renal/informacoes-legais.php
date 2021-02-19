@@ -11,7 +11,7 @@
 		
 		<h2>Política de Privacidade</h2>
 
-		<p>Agradecemos o seu interesse em acessar no site Nutrição Renal. A proteção da sua privacidade é importante para nós. Por esse motivo desejamos transmitir-lhe os tipos de informação que serão recolhidas no site www.nutricaorenal.com.br, bem como explicar-lhe a forma como essa informação é utilizada. Informamos que o nosso site por vezes inclui ligações para sites não cobertos por esta política de proteção de dados.</p>
+		<p>Agradecemos o seu interesse em acessar no site Nutrição Renal. A proteção da sua privacidade é importante para nós. Por esse motivo desejamos transmitir-lhe os tipos de informação que serão recolhidas no site www.juntospelorim.com.br, bem como explicar-lhe a forma como essa informação é utilizada. Informamos que o nosso site por vezes inclui ligações para sites não cobertos por esta política de proteção de dados.</p>
 
 		<p>Por favor, não deixe de ler esta Política de Privacidade antes de usar ou fornecer informações a este site.</p>
 
@@ -37,7 +37,7 @@
 
 		<p>Tal como acontece com a maioria dos sites, os seguintes dados são usualmente recolhidos durante as visitas aos nossos sites: o nome do seu fornecedor de serviços (endereço IP), o site que o direcionou ao nosso site, as páginas visitadas, tipo de navegador e as data e duração da sua visita. Esta informação não poderá ser utilizada para identificar pessoalmente os usuários. Detalhes adicionais serão recolhidos apenas com a permissão do utilizador, por exemplo, durante a sua participação numa pesquisa online. As informações pessoais facultadas durante uma visita aos nossos sites é tratada de acordo com as atuais orientações e disposições legais brasileiras.</p>
 
-		<p>Sempre que nos contate através da página de internet poderão ser recolhidas informações, tais como o seu nome, o da sua empresa, residência, endereço de correio eletrônico, tipo de solicitação e outras informações adicionais com o objetivo de responder à sua solicitação. Tais comunicações são confidenciais. Caso nos informe que tal informação não deve ser utilizada como base para futuros contatos, respeitaremos a sua decisão. Para solicitar a remoção dos seus dados pessoais da base de dados do site www.nutricaorenal.com.br , deverá contatar-nos através do seguinte endereço eletrônico: fresenius.br@fresenius-kabi.com</p>
+		<p>Sempre que nos contate através da página de internet poderão ser recolhidas informações, tais como o seu nome, o da sua empresa, residência, endereço de correio eletrônico, tipo de solicitação e outras informações adicionais com o objetivo de responder à sua solicitação. Tais comunicações são confidenciais. Caso nos informe que tal informação não deve ser utilizada como base para futuros contatos, respeitaremos a sua decisão. Para solicitar a remoção dos seus dados pessoais da base de dados do site www.juntospelorim.com.br , deverá contatar-nos através do seguinte endereço eletrônico: fresenius.br@fresenius-kabi.com</p>
 
 		<p>Apenas revelaremos os seus dados pessoais a entidades públicas quando tal seja imposto por lei. Os nossos colaboradores são por nós sujeitos ao respeito pela confidencialidade.</p>
 

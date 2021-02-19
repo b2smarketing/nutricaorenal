@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="<?php echo SITEPATH; ?>css/nutricao.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo SITEPATH; ?>js/jsvalidador.js"></script>
-    <link rel="canonical" href="https://nutricaorenal.com.br<?php echo $_SERVER['REQUEST_URI']; ?>" />
+    <link rel="canonical" href="https://juntospelorim.com<?php echo $_SERVER['REQUEST_URI']; ?>" />
 	<!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82077519-21"></script>
     <script>
@@ -45,7 +45,7 @@
 					<div class="col-lg-4">
 						<h1 class="wow fadeIn"><br>Novidade</h1>
                         <p>O Programa Juntos pelo Rim tem agora um programa de descontos!</p>
-                        <a class="wow fadeIn" href="/programa-de-apoio-ao-paciente">Saiba Mais ></a>
+                        <a class="wow fadeIn" href="/programa-de-apoio-ao-paciente"><h2 class="desconto">Saiba Mais</h2></a>
 					</div>
 				</div>					
 			</li>

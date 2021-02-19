@@ -8,7 +8,7 @@
 // Automatic Rotation
 setInterval(function() {
     nextAuto();
-}, 9200);
+}, 18400);
 
 function nextAuto() {
     if ($('.baby-controls .next').length)
