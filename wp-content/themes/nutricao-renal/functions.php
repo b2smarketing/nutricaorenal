@@ -129,7 +129,7 @@ function wpf_entries_table($atts)
 
     ob_start();
 
-    $campo = ['Nome','Usuario', "E-Mail", "CPF"];
+    $campo = ['Nome','CPF', "E-Mail"];
     $x = 0;
     // Now, loop through all the form entries.
     foreach ($entries as $entry) {
@@ -148,7 +148,7 @@ function wpf_entries_table($atts)
             $x++;
         }
 
-        $sql2 = "select codigo,validade from wp_codigos where usuario = '$usuario'";
+        $sql2 = "select codigo,validade from wp_codigos where cpf = '$usuario'";
 
         $consulta = $conexao->query($sql2);
 

@@ -11,13 +11,13 @@ if($mes == '02'){
 }
 $validade = $ano."-".$mes."-".$dia;
 
-$usuario = $_POST['usuario'];
+$cpf = $_POST['cpf'];
 
 include $_SERVER['DOCUMENT_ROOT']."/wp-config.php";
 
 $conexao = new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
 
-$sql = "select id from wp_codigos where usuario = ''";
+$sql = "select id from wp_codigos where cpf = ''";
 
 $consulta = $conexao->query($sql);
 
@@ -27,7 +27,7 @@ foreach ($consulta as $row) {
 }
 if($resultado != null){
     $id_codigo = $resultado[0]['id'];
-    $sql2 = "update wp_codigos set usuario = '$usuario', validade = '$validade' where id = '$id_codigo'";
+    $sql2 = "update wp_codigos set cpf = '$cpf', validade = '$validade' where id = '$id_codigo'";
     $consulta = $conexao->query($sql2);
     if($consulta){
         echo "Inserido OK";

@@ -23,7 +23,7 @@ $novavalidade = $ano . "-" . $mes . "-" . $dia;
 $hoje = date('Y-m-d');
 $codigo = $_POST['codigo'];
 $validade = inverteData($_POST['validade']);
-$usuario = $_POST['usuario'];
+$cpf = $_POST['cpf'];
 
 if (strtotime($validade) >= strtotime($hoje)) {
     echo "<span class='erro'>Erro, esse Cupom ainda está na validade !</span>";
@@ -33,7 +33,7 @@ if (strtotime($validade) >= strtotime($hoje)) {
 
     $conexao = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
-    $sql = "select id,codigo from wp_codigos where usuario = ''";
+    $sql = "select id,codigo from wp_codigos where cpf = ''";
 
     $consulta = $conexao->query($sql);
 
@@ -43,7 +43,7 @@ if (strtotime($validade) >= strtotime($hoje)) {
     }
     if ($resultado != null) {
         $id_codigo = $resultado[0]['id'];
-        $sql2 = "update wp_codigos set usuario = '$usuario', validade = '$novavalidade' where id = '$id_codigo'";
+        $sql2 = "update wp_codigos set cpf = '$cpf', validade = '$novavalidade' where id = '$id_codigo'";
         $consulta = $conexao->query($sql2);
         if ($consulta) {
             echo "Cupom Gerado com Sucesso !<br>Novo Cupom: ".$resultado[0]['codigo'];

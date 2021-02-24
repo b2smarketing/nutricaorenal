@@ -2,20 +2,21 @@
 
 $(function () { 
         if ($('#confirmado').length) {
-                var usuario = $('#confirmado').html();              
-                $.post("/codigo",{usuario,usuario}, function (data) {
+                var cpf = $('#confirmado').html();
+                console.log("confirmado: "+cpf);              
+                $.post("/codigo",{cpf,cpf}, function (data) {
                         console.log(data);
                 });
         } else {
-                console.log("digitar form");
+                console.log("erro");
         }
 })
 
 function geranovocod(){
         var codigo = $("#codigo").html();
         var validade = $("#validade").html();
-        var usuario = $("#item1").html();
-        $.post("/codigonovo",{codigo:codigo,validade:validade,usuario:usuario}, function (data) {
+        var cpf = $("#item1").html();
+        $.post("/codigonovo",{codigo:codigo,validade:validade,cpf:cpf}, function (data) {
                 $('.resposta').html(data);
         });
 }
@@ -96,13 +97,6 @@ function ValidaSobreNome(nome) {
         }
 }
 
-function ValidaUser(nome) {
-        if (nome.value.length < 3 || !isNaN(nome.value)) {
-                $(".usuario .wpforms-field-description").html('Nome de Usuário inválido').css({ 'color': '#900' });
-                $(".usuario input").val('');
-                $(".usuario input").focus();
-        }
-}
 function ValidaPass(nome) {
         if (nome.value.length < 3 || !isNaN(nome.value)) {
                 $(".senha .wpforms-field-description").html('Senha inválida').css({ 'color': '#900' });

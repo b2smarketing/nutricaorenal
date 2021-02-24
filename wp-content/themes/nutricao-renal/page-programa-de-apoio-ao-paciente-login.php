@@ -18,4 +18,14 @@
 
 	</div>
 </section>
+<script type="text/javascript">
+	$(function() {
+		// Atributos adicionais para CPF (user)
+		var campocpf = $(".campo-cpf input");
+		campocpf.attr("onKeyPress", "MascaraCPF(this)");
+		campocpf.attr("onKeyUp", "$('.campo-cpf .wpforms-field-description').html('')");
+		campocpf.attr("onBlur", "ValidarCPF(this)");
+		campocpf.attr("maxlength", "14");
+	})
+</script>
 <?php get_footer(); ?>

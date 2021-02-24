@@ -68,11 +68,12 @@
 		sobrenome.attr("onKeyUp", "$('.nome-completo .wpforms-field-description').html('')");
 		sobrenome.attr("maxlength", "30");
 
-		// Atributos adicionais para User
-		var usuario = $(".usuario input");
-		usuario.attr("onBlur", "ValidaUser(this)");
-		usuario.attr("onKeyUp", "$('.usuario .wpforms-field-description').html('( para Login no sistema )').css({ 'color': '#000' })");
-		usuario.attr("maxlength", "10");
+		// Atributos adicionais para CPF (user)
+		var campocpf = $(".campo-cpf input");
+		campocpf.attr("onKeyPress", "MascaraCPF(this)");
+		campocpf.attr("onKeyUp", "$('.campo-cpf .wpforms-field-description').html('')");
+		campocpf.attr("onBlur", "ValidarCPF(this)");
+		campocpf.attr("maxlength", "14");
 
 		var senha = $(".senha input");
 		senha.attr("onBlur", "ValidaPass(this)");
@@ -97,14 +98,7 @@
 		campodata.attr("onKeyPress", "MascaraData(this)");
 		campodata.attr("onKeyUp", "$('.campo-data .wpforms-field-description').html('')");
 		campodata.attr("onBlur", "ValidaData(this)");
-		campodata.attr("maxlength", "10");
-
-		// Atributos adicionais para CPF
-		var campocpf = $(".campo-cpf input");
-		campocpf.attr("onKeyPress", "MascaraCPF(this)");
-		campocpf.attr("onKeyUp", "$('.campo-cpf .wpforms-field-description').html('')");
-		campocpf.attr("onBlur", "ValidarCPF(this)");
-		campocpf.attr("maxlength", "14");
+		campodata.attr("maxlength", "10");		
 
 		// Atributos adicionais para Telefones
 		var telefone = $(".telefones .wpforms-field-name-first");

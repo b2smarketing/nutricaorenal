@@ -7,7 +7,7 @@
 					<h1>Gerar Cupom</h1>
 					<?php
 					if (is_user_logged_in()) {
-						echo do_shortcode("[wpforms_entries_table id='1388' fields='1,2,3,10']");
+						echo do_shortcode("[wpforms_entries_table id='1388' fields='1,2,3']");
 						echo "<br><button class='btngeracod' onclick='geranovocod()'>Gerar Novo Cupom</button>";
 					} else {
 						echo "<h3>Precisa estar logado no sistema !</h3>";
