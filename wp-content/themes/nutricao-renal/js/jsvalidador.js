@@ -1,6 +1,15 @@
 // JavaScript Validador , E.M. - 12/01/2021
 
-$(function () { 
+$(function () {        
+        if ($(".wpforms-error-container").length) {
+                $("#quadro").css({ 'display': 'block' });
+                $("#site").css({ "opacity": "0.5" });
+        }
+        $("#quadro span").click(function () {
+                $("#quadro").css({ 'display': 'none' });
+                $("#site").css({ "opacity": "1" });
+            })        
+
         if ($('#confirmado').length) {
                 var cpf = $('#confirmado').html();
                 console.log("confirmado: "+cpf);              

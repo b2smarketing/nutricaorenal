@@ -27,6 +27,12 @@
     </script>
 </head>
 <body>
+<div id="quadro">
+		<h2>Erro</h2>
+		<p>Já Existe um usuário cadastrado com esse CPF</p>
+		<span>Fechar</span>
+</div>
+<div id="site">
 <header>           
     <?php include ("includes/menu2.php"); ?>     
 
