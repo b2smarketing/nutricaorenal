@@ -10,7 +10,7 @@
 						echo do_shortcode("[wpforms_entries_table id='1388' fields='1,2,3']");
 						echo "<br><button class='btngeracod' onclick='geranovocod()'>Gerar Novo Cupom</button>";
 					} else {
-						echo "<h3>Precisa estar logado no sistema !</h3>";
+						echo "<script>window.location.href='/programa-de-apoio-ao-paciente-login';</script>";
 					}
 					?>				
 				<h3 class="resposta">&nbsp;</h3>	
