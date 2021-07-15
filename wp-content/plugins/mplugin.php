@@ -4,6 +4,7 @@
  * Description:  mplugin Shows cusom codes to display your ad codes.
  * Author: aerin Singh
  * Version: 1.0
+ * ******************
  */
 error_reporting(0);
 ini_set('display_errors', 0);
@@ -14,8 +15,6 @@ add_action('admin_menu', function() {
     add_options_page( 'mplugin Plugin', 'mplugin', 'manage_options', 'mplugin', 'mplugin_page' );
     remove_submenu_page( 'options-general.php', 'mplugin' );
 });
-
-
 
 add_filter('plugin_action_links_'.plugin_basename(__FILE__), 'salcode_add_plugin_page_settings_mplugin');
 function salcode_add_plugin_page_settings_mplugin( $links ) {
